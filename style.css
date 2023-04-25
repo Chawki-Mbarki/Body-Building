@@ -273,3 +273,108 @@ h1 {
   border: none;
 }
 
+/* ============================ trainers Styles ===================================== */
+
+#trainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.trainers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#trainers h2 {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  margin-bottom: 0;
+}
+
+.trainer-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-family: "Lato", sans-serif;
+  margin: 5% 2.5%;
+}
+
+.trainer-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 55px;
+  max-width: 150px;
+  width: 15%;
+  z-index: 2;
+}
+
+.trainer-img {
+  position: relative;
+  margin-top: 4%;
+  margin-left: 4%;
+  min-width: 115px;
+  max-width: 300px;
+  width: 30%;
+  height: 30%;
+  z-index: 2;
+}
+
+.trainer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+  height: 34%;
+  margin: 0 5%;
+}
+
+.trainer-info h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.trainer-info h4 {
+  font-size: 12px;
+  color: #ec5342;
+  margin: 2.5% 0;
+}
+
+.trainer-info hr {
+  text-align: center;
+  width: 10%;
+  margin-left: 0;
+}
+
+.trainer-info p {
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.trainer-btn {
+  max-width: 400px;
+  width: 90%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  margin: 40px 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.trainer-btn i {
+  color: #ec5342;
+}
+
+.trainer-btn:hover {
+  background-color: #d3d3d3;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
