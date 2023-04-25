@@ -54,7 +54,7 @@ ul {
   width: 100vw;
   transform: translatey(-100%);
   background-color: #ec5342a0;
-  z-index: 2;
+  z-index: 3;
   opacity: 0;
   transition: 0.5s;
   backdrop-filter: blur(5px);
@@ -62,12 +62,14 @@ ul {
 
 .xmark,
 .menu {
-  color: #272a31;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   left: 10vw;
   top: 5%;
   font-size: calc(10px + 1.955vh + 1.955vw);
+  border-radius: 50%;
+  filter: invert(1);
+  mix-blend-mode: difference;
 }
 
 nav {
@@ -128,5 +130,68 @@ nav {
 .display-nav {
   transform: translateY(0%);
   opacity: 100;
+}
+
+/* ============================ Headline Styles ===================================== */
+
+.greeting {
+  margin-top: 15vh;
+  font-size: 21px;
+  font-weight: 400;
+  color: #ec5242;
+}
+
+h1 {
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 900;
+  font-size: calc(10px + 1.6875vh + 2.6875vw);
+  text-transform: uppercase;
+  background-image: url(assets/images/fire.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+}
+
+.description {
+  background-color: #f5f5f5;
+  border: 5px solid white;
+  padding: 10px 15px;
+  margin: 30px 0;
+  font-size: 15px;
+  line-height: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.bg1,
+.bg2 {
+  position: absolute;
+  color: #272a31;
+  font-size: 30px;
+  opacity: 40%;
+}
+
+.bg1 {
+  top: 200px;
+  right: 30px;
+}
+
+.bg2 {
+  top: 50px;
+  left: 100px;
+}
+
+.date {
+  font-size: 27px;
+  font-weight: 900;
+  color: #272a31;
+}
+
+.place {
+  font-size: 17px;
+  color: #272a31;
+  margin-top: 7px;
 }
 
