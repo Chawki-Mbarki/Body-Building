@@ -43,3 +43,90 @@ ul {
   margin: auto;
 }
 
+/* ============================ Header Styles ===================================== */
+
+/* ============================ Navigation Styles ===================================== */
+
+.navigation {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translatey(-100%);
+  background-color: #ec5342a0;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s;
+  backdrop-filter: blur(5px);
+}
+
+.xmark,
+.menu {
+  color: #272a31;
+  position: fixed;
+  z-index: 2;
+  left: 10vw;
+  top: 5%;
+  font-size: calc(10px + 1.955vh + 1.955vw);
+}
+
+nav {
+  display: grid;
+  grid-template-rows: 40vh 45.72vh 9.28vh;
+}
+
+.nav-top {
+  padding: 1.303vh 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-top a {
+  color: #222f47;
+  font-weight: 900;
+  font-size: calc(1.955vh + 1.955vw);
+}
+
+.nav-top p {
+  height: 10.69vh;
+  font-size: calc(1.955vh + 1.955vw);
+}
+
+.nav-top img{
+  height: calc(12vh + 12vw);
+  width: calc(12vh + 12vw);
+  align-self: flex-end;
+  border-radius: 50%;
+}
+
+.nav-links {
+  padding-top: 2%;
+  align-items: center;
+  gap: 5%;
+}
+
+.nav-links a {
+  color: #272a31;
+  font-size: calc(1.629vh + 1.629vw);
+  font-weight: 100;
+}
+
+.nav-bottom {
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bottom button {
+  color: #ec5242;
+  font-size: calc(1.629vh + 1.629vw);
+  border: calc(0.325vh + 0.325vw) #ec5242 solid;
+  background-color: #d3d3d3;
+  padding: 1.303vh 2.607vw;
+}
+
+.display-nav {
+  transform: translateY(0%);
+  opacity: 100;
+}
+
