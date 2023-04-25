@@ -4,8 +4,10 @@ const body = document.querySelector('body');
 
 const menu = document.querySelector('.menu');
 const xmark = document.querySelector('.xmark');
+
+/* these are for future use, to add animation to highlighted section and links
 const navLinks = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('.section');
+const sections = document.querySelectorAll('.section'); */
 
 const moreLess = document.querySelector('.moreless');
 const chevron = document.querySelector('.chevron');
@@ -49,28 +51,12 @@ const trainers = [
   },
 ];
 
-
 // ================================= Function declaration =================================
 
 // this function will toggle the display status of the navigation bar
 function displayNavigation() {
   const nav = document.querySelector('.navigation');
   nav.classList.toggle('display-nav');
-}
-
-// This function will see the screen width, and based on that
-// it shows all trainers or just the first two
-function widthTester() {
-  if (window.innerWidth >= 768) {
-    document.getElementById('trainers-container').innerHTML = '';
-    generateTrainers(0, trainers.length);
-  } else {
-
-    document.getElementById('trainers-container').innerHTML = '';
-    generateTrainers(0, 2);
-    chevron.classList.remove('up');
-    moreLess.innerHTML = 'MORE ';
-  }
 }
 
 function generateTrainers(start, number) {
@@ -87,6 +73,20 @@ function generateTrainers(start, number) {
           <p class="trainer-para">${trainers[i].info}</p>
         </div>
       </div>`;
+  }
+}
+
+// This function will see the screen width, and based on that
+// it shows all trainers or just the first two
+function widthTester() {
+  if (window.innerWidth >= 768) {
+    document.getElementById('trainers-container').innerHTML = '';
+    generateTrainers(0, trainers.length);
+  } else {
+    document.getElementById('trainers-container').innerHTML = '';
+    generateTrainers(0, 2);
+    chevron.classList.remove('up');
+    moreLess.innerHTML = 'MORE ';
   }
 }
 
@@ -109,10 +109,10 @@ function trainersChecker() {
   chevron.classList.toggle('up');
 }
 
-
 // ================================= Event Listeners =================================
- 
+
 menu.addEventListener('click', displayNavigation);
 xmark.addEventListener('click', displayNavigation);
 trainerButton.addEventListener('click', trainersChecker);
 window.addEventListener('resize', widthTester);
+body.addEventListener('load', widthTester);
