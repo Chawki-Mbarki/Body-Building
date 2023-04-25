@@ -378,3 +378,32 @@ h1 {
   transform: rotate(180deg);
 }
 
+/* ===================== Partners ================== */
+
+#partners {
+  background-color: #535353;
+}
+
+#partners .title {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  background-size: 30px 1px;
+  color: #d3d3d3;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.company span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #a8a8a8;
+}
+
