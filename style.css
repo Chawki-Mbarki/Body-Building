@@ -407,3 +407,19 @@ h1 {
   color: #a8a8a8;
 }
 
+/* ================= Footer styles ======================== */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+}
+
+.footer-logo {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  padding: 20px 5px;
+}
