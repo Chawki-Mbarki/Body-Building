@@ -1,7 +1,5 @@
 // ================================= Global Variables declaration =================================
 
-const body = document.querySelector('body');
-
 const menu = document.querySelector('.menu');
 const xmark = document.querySelector('.xmark');
 
@@ -63,10 +61,10 @@ function generateTrainers(start, number) {
   const trainersContainer = document.querySelector('#trainers-container');
   for (let i = start; i < number; i += 1) {
     trainersContainer.innerHTML += `
-      <div class="trainer-card">
+      <div class="trainer-card flex">
         <img src="assets/images/chess-board.png" alt="" class="trainer-deco">
         <img src="${trainers[i].image}" alt="" class="trainer-img">
-        <div class="trainer-info">
+        <div class="trainer-info flex column">
           <h3 class="trainer-name">${trainers[i].name}</h3>
           <h4 class="trainer-occ" >${trainers[i].occupation}</h4>
           <hr>
@@ -115,4 +113,4 @@ menu.addEventListener('click', displayNavigation);
 xmark.addEventListener('click', displayNavigation);
 trainerButton.addEventListener('click', trainersChecker);
 window.addEventListener('resize', widthTester);
-body.addEventListener('load', widthTester);
+window.addEventListener('load', widthTester);
