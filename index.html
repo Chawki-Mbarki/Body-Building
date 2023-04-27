@@ -23,34 +23,33 @@
   <i class="fa-sharp fa-solid fa-bars menu"></i>
   <div class="navigation">
     <i class="fa-solid fa-xmark xmark"></i>
-    <nav>
+    <nav class="wrapper">
       <div class="nav-top">
         <a href="index.html">
           <img class="logo" src="assets/images/logo2.png" alt="logo">
-          <p><span>SP Fitness</span><br>center 2023</p>
+          <p class="max-font-26"><span>SP Fitness</span><br>center 2023</p>
         </a>
       </div>
       <ul class="nav-links flex column">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="#">Join</a></li>
-        <li><a class="nav-link" href="#">Sponsor</a></li>
-        <li><a class="nav-link" href="#">News</a></li>
+        <li><a class="nav-link max-font-26" href="about.html">About</a></li>
+        <li><a class="nav-link max-font-26" href="#">Program</a></li>
+        <li><a class="nav-link max-font-26" href="#">Join</a></li>
+        <li><a class="nav-link max-font-26" href="#">Sponsor</a></li>
+        <li><a class="nav-link max-font-26 " href="#">News</a></li>
       </ul>
       <div class="nav-bottom flex">
-        <button type="button">SPFC Story</button>
+        <button class="max-font-26" type="button">SPFC Story</button>
       </div>
     </nav>
   </div>
 
   <main>
     <section id="headline" class="section">
-      <div class="greeting">
-        <div class="background"></div>
+      <div class="greeting wrapper">
         <p>"Hello! Champion"</p>
       </div>
       <div class="wrapper">
-        <h1>Super Power Fitness Center 2023</h1>
+        <h1>Super Power<br>Fitness Center 2023</h1>
         <p class="description">Super Power Fitness Center is a premier gym offering various services and facilities to
           help you achieve your fitness goals. Whether you want to lose weight, build muscle, improve your health or
           just
@@ -65,7 +64,7 @@
     <section id="about">
       <div id="program">
         <div class="wrapper flex column">
-          <h2 class="title">Main Program</h2>
+          <h2 class="title max-font-26">Main Program</h2>
           <div class="tag flex column">
             <div class="program-tag flex">
               <i class="program-img fa-solid fa-hands-holding-child card-icon"></i>
@@ -102,14 +101,14 @@
             </div>
           </div>
           <button type="button" class="join-btn">Join SPFC 2023 Now</button>
-          <a href="#" class="desktop-btn">see the whole program</a>
+          <a href="#" class="desktop-link max-font-26">see the whole program</a>
         </div>
       </div>
     </section>
 
     <section id="trainers" class="flex column">
-      <div class="wrapper">
-        <h2 class="title">Featured Trainers</h2>
+      <div class="wrapper flex column">
+        <h2 class="title max-font-26">Featured Trainers</h2>
         <div id="trainers-container" class="trainers-container flex column">
 
         </div>
@@ -120,7 +119,7 @@
 
     <section id="partners">
       <div class="container">
-        <h2 class="title">Partner</h2>
+        <h2 class="title max-font-26">Partner</h2>
         <div class="company flex">
           <span id="facebook">Facebook</span>
           <span id="mozilla">Mozilla</span>
@@ -132,10 +131,17 @@
     </section>
   </main>
 
-  <footer class="flex">
-    <img src="assets/Images/Logo2.png" alt="" class="footer-logo">
-    <p>
+  <footer class="wrapper flex">
+    <a href="index.html">
+      <img class="logo" src="assets/images/logo2.png" alt="logo">
+      <p class="max-font-26">SP Fitness<br>center 2023</p>
+    </a>
+    <p class="max-font-26">
       2023 | SuperPower Fitness center
+      <span>
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minima recusandae voluptate. Numquam esse cumque consequatur culpa, veniam sunt, vero repellat, consequuntur itaque maiores fugit sequi ullam exercitationem repudiandae magni?
+      </span>
     </p>
   </footer>
 </body>

@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <div class="wrapper">
+    <div class="wrapper flex">
       <i class="fa-brands fa-facebook-f"></i>
       <i class="fa-brands fa-twitter"></i>
       <a href="#">English</a>
@@ -24,26 +24,25 @@
   <i class="fa-sharp fa-solid fa-bars menu"></i>
   <div class="navigation">
     <i class="fa-solid fa-xmark xmark"></i>
-    <nav>
-      <div class="nav-top flex">
+    <nav class="wrapper">
+      <div class="nav-top">
         <a href="index.html">
           <img class="logo" src="assets/images/logo2.png" alt="logo">
-          <p><span>SP Fitness</span><br>center 2023</p>
+          <p class="max-font-26"><span>SP Fitness</span><br>center 2023</p>
         </a>
       </div>
       <ul class="nav-links flex column">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="#">About</a></li>
-        <li><a class="nav-link" href="#">Join</a></li>
-        <li><a class="nav-link" href="#">Sponsor</a></li>
-        <li><a class="nav-link" href="#">News</a></li>
+        <li><a class="nav-link max-font-26" href="about.html">About</a></li>
+        <li><a class="nav-link max-font-26" href="#">Program</a></li>
+        <li><a class="nav-link max-font-26" href="#">Join</a></li>
+        <li><a class="nav-link max-font-26" href="#">Sponsor</a></li>
+        <li><a class="nav-link max-font-26 " href="#">News</a></li>
       </ul>
       <div class="nav-bottom flex">
-        <button type="button">SPFC Story</button>
+        <button class="max-font-26" type="button">SPFC Story</button>
       </div>
     </nav>
   </div>
-
   <main>
     <section id="headline" class="section">
       <div class="greeting">
@@ -57,7 +56,7 @@
           have fun, we have something for you. Join us today and discover the benefits of working out with our qualified
           trainers, state-of-the-art equipment and supportive community.</p>
         
-        <p class="contact">Please contact us per Email for any further questions<br><br>about SP Fitness Center 2023!</p>
+        <p class="contact">Please contact us per Email for any further questions about SP Fitness Center 2023!</p>
         <br>
         <p class="email"><strong><u>spfitness2023@gmail.com</u></strong></p>
         <img class="abg1" src="assets/images/o-stripes.png" alt="">
@@ -68,14 +67,14 @@
     </section>
 
     <div class="wrapper logo-wrapper flex column">
-      <h2 class="title">Super Power<br>Center 2023 Logo</h2>
+      <h2 class="title">Super Power Center 2023 Logo</h2>
       <p>The logo of SPFC 2023 was decided<br> the logo competition from 8June to 7July</p>
       <img class="logo" src="assets/images/logo2 (full).png" alt="SPFC">
     </div>
 
     <section id="gallery">
       <h2 class="title">See SPFC Gallery</h2>
-      <div class="gallery-container">
+      <div class="gallery-container wrapper flex column">
         <div class="gallery-frame">
           <img src="assets/Images/Gym.png" alt="" class="gallery-img">
           <div class="gallery-curtain"><span class="curtain-text">Equipments</span></div>
@@ -90,7 +89,7 @@
     <section id="partners">
       <div class="container">
         <h2 class="title">Partner</h2>
-        <div class="company">
+        <div class="company flex">
           <span id="facebook">Facebook</span>
           <span id="mozilla">Mozilla</span>
           <span id="apple">Apple</span>
@@ -102,10 +101,19 @@
   </main>
 
   <footer>
-    <img src="assets/Images/Logo2.png" alt="" class="footer-logo">
-    <p>
-      2023 | SuperPower Fitness center
-    </p>
+    <div class="wrapper flex">
+      <a href="index.html">
+        <img class="logo" src="assets/images/logo2.png" alt="logo">
+        <p class="max-font-26">SP Fitness<br>center 2023</p>
+      </a>
+      <p class="max-font-26">
+        2023 | SuperPower Fitness center
+        <span>
+          <br><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minima recusandae voluptate. Numquam esse cumque consequatur culpa, veniam sunt, vero repellat, consequuntur itaque maiores fugit sequi ullam exercitationem repudiandae magni?
+        </span>
+      </p>
+    </div>
   </footer>
 </body>
 <script src="script.js"></script>
