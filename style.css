@@ -3,8 +3,10 @@
 /* ============================ Removed Elements ===================================== */
 
 @media screen and (max-width: 767px) {
+
   header,
-  .desktop-btn {
+  .desktop-link,
+  footer span {
     display: none !important;
   }
 }
@@ -41,7 +43,8 @@ ul {
 }
 
 .wrapper {
-  max-width: 80%;
+  width: 90%;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -53,7 +56,8 @@ ul {
   position: fixed;
   top: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   transform: translatey(-100%);
   background-color: #ec5342a0;
   z-index: 3;
@@ -89,7 +93,6 @@ nav {
 .nav-top a {
   color: #222f47;
   font-weight: 900;
-  font-size: calc(1.955vh + 1.955vw);
 }
 
 .nav-top p {
@@ -97,7 +100,7 @@ nav {
   font-size: calc(1.955vh + 1.955vw);
 }
 
-.nav-top img{
+.nav-top img {
   height: calc(12vh + 12vw);
   width: calc(12vh + 12vw);
   align-self: flex-end;
@@ -136,20 +139,12 @@ nav {
 
 /* ============================ Headline Styles ===================================== */
 
-.greeting {
-  position: relative;
-}
-
-.greeting .background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.09;
-  z-index: -1;
+#headline {
+  padding-bottom: 80px;
 }
 
 .greeting p {
-  padding: 15vh 10% 0 10%;
+  padding: 15vh 0 0 0;
   font-size: 21px;
   font-weight: 400;
   color: #ec5242;
@@ -170,6 +165,7 @@ h1 {
 
 .description {
   background-color: #f5f5f5;
+  color: #272a31;
   border: 5px solid white;
   padding: 10px 15px;
   margin: 30px 0;
@@ -179,74 +175,23 @@ h1 {
   z-index: 1;
 }
 
-.bg1,
-.bg2,
-.bg3,
-.bg4,
-.abg1,
-.abg2 {
-  position: absolute;
-  color: #272a31;
-  font-size: calc(3.6875vw + 3.6875vh);
-  opacity: 40%;
-  z-index: -1;
-}
-
-.bg3,
-.abg1,
-.abg2 {
-  background-size: cover;
-  border-radius: 50%;
-  opacity: 1;
-}
-
-.bg1 {
-  top: 20vh;
-  right: 30px;
-}
-
-.bg2 {
-  top: 5vh;
-  left: 200px;
-}
-
-.bg3 {
-  height: calc(9.778vw + 9.778vh);
-  width: calc(9.778vw + 9.778vh);
-  background: url(assets/images/hitmark-colorful.png);
-  top: calc(40px + 30vh);
-  left: calc(40px + 50vw);
-}
-
-.bg4 {
-  height: calc(3.6875vw + 3.6875vh);
-  top: 500px;
-  left: 0px;
-  opacity: 30%;
-}
-
 .date {
   font-size: 27px;
   font-weight: 900;
-  color: #272a31;
+  color: #3e3e3e;
 }
 
 .place {
   font-size: 17px;
-  color: #272a31;
+  color: #3e3e3e;
   margin-top: 7px;
 }
 
 /* ============================ about Styles ===================================== */
 
-#about {
-  margin-top: 60px;
-}
-
 #program {
   background-image: url(assets/images/cross.svg);
   background-color: #272a31;
-  position: relative;
 }
 
 #program .wrapper {
@@ -271,10 +216,9 @@ h1 {
 }
 
 .program-tag {
-  justify-content: space-between;
   align-items: center;
   padding: 0 1.564vw;
-  gap: 1.303vw;
+  gap: 20px;
   background-color: rgba(162, 162, 162, 0.2);
   transition: all 0.5s ease-out;
 }
@@ -299,9 +243,7 @@ h1 {
 }
 
 .program-detail {
-  max-width: 32.594vw;
   font-size: 1.76vw;
-  line-height: 2.6vw;
   color: #fff;
 }
 
@@ -323,6 +265,11 @@ h1 {
 }
 
 .trainers-container {
+  align-items: center;
+}
+
+#trainers .wrapper {
+  justify-content: center;
   align-items: center;
 }
 
@@ -443,15 +390,30 @@ h1 {
 /* ============================ Footer Styles ===================================== */
 
 footer {
+  padding: 2vh 0;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
-  font-family: "Lato", sans-serif;
-  background-color: #fff;
 }
 
-.footer-logo {
+footer a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer p {
+  height: auto;
+  font-weight: 900;
+  font-size: 1.6vw;
+  text-align: center;
+  color: black;
+  align-self: center;
+}
+
+footer img {
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  padding: 5px 5px;
+}
+
 }
