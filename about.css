@@ -81,6 +81,7 @@ h1 {
 .logo {
   border: #d3d3d3 solid 5px;
   width: 80%;
+  max-width: 1280px;
 }
 
 /* ============================ gallery Styles ===================================== */
@@ -131,4 +132,44 @@ h1 {
   color: #fff;
 }
 
+/**/
 
+@media screen and (min-width: 768px) {
+
+  /* ============================ Headline Styles ===================================== */
+
+  .description {
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+  }
+
+  #partners {
+    display: none;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-row: 100%;
+    grid-template-columns: 45% 45%;
+    flex-direction: row;
+    gap: 10%;
+    max-width: 1280px;
+  }
+
+  footer {
+    height: 100%;
+    width: 100%;
+    background-color: #272a31;
+    padding: 5vh 0;
+  }
+
+  footer .wrapper * {
+    color: white;
+  }
+
+  footer .wrapper {
+    gap: 1.5vw;
+    max-width: 1280px;
+  }
+}

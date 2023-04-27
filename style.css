@@ -416,4 +416,305 @@ footer img {
   border-radius: 50%;
 }
 
+
+/* ============================ Desktop Styles ===================================== */
+
+@media screen and (min-width: 768px) {
+
+  .menu,
+  .xmark,
+  .join-btn,
+  .trainer-btn {
+    display: none !important;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  header {
+    height: 40px;
+    background-color: #3e3e3e;
+    display: block;
+  }
+
+  /* ============================ Header Styles ===================================== */
+
+  header .wrapper {
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    padding: 8px 0;
+    color: #fff;
+  }
+
+  header .wrapper a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14.5px;
+  }
+
+  header .wrapper a:hover,
+  i:hover {
+    cursor: pointer;
+    color: #ec5242;
+  }
+
+  /* ============================ Navigation Styles ===================================== */
+
+  .navigation {
+    position: relative;
+    height: auto;
+    max-height: 100px;
+    transform: translatey(0);
+    background-color: transparent;
+    z-index: 3;
+    opacity: 1;
+    transition: none;
+    backdrop-filter: blur(0);
+    padding: 5px 0;
+    background-color: white;
+  }
+
+  nav {
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 55% 20%;
+  }
+
+  .nav-top {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav-top a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-top p {
+    height: auto;
+    font-weight: 900;
+    font-size: 1.6vw;
+    text-align: left;
+    color: black;
+  }
+
+  .nav-top img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .nav-links {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10%;
+  }
+
+  .nav-links a {
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: #5a5a5a;
+  }
+
+  .nav-bottom {
+    justify-content: flex-end;
+  }
+
+  .nav-bottom button {
+    font-size: 1.5vw;
+    border: 0.5vw #ec5242 solid;
+    background-color: white;
+    padding: 10px 15px;
+  }
+
+  /* ============================ Headline Styles ===================================== */
+
+  #headline {
+    background-image: url(assets/images/main_big.png);
+    background-size: cover;
+    background-position: right;
+  }
+
+  .greeting p {
+    padding: 7vh 0 0 0;
+    font-size: calc(2vw + 2vh);
+    font-weight: 400;
+    color: #ec5242;
+  }
+
+  .description {
+    font-size: 18px;
+    width: 90%;
+    max-width: 680px;
+  }
+
+  .date {
+    font-size: 3vw;
+  }
+
+  .place {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  /* ============================ about Styles ===================================== */
+
+  #program {
+    background-image: url(assets/images/cross.svg);
+    background-color: #272a31;
+  }
+
+  #program .wrapper {
+    justify-content: center;
+  }
+
+  .title {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    background-image: linear-gradient(#ec5242, #ec5242);
+    background-size: 50px 2px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 18px;
+    padding-top: 30px;
+  }
+
+  .tag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .program-tag {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 1.564vw;
+    border: #222f47 1px solid;
+  }
+
+  .program-tag:hover .program-img {
+    color: #ec5242;
+  }
+
+  .program-title {
+    font-size: 1.2vw;
+    color: #ec5242;
+  }
+
+  .program-detail {
+    font-size: 0.9vw;
+    text-align: center;
+  }
+
+  .desktop-link {
+    text-transform: uppercase;
+    word-spacing: 3px;
+    color: #fff;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 5vh 0;
+    text-decoration: underline;
+  }
+
+  .desktop-link:hover {
+    color: #ec5242;
+  }
+
+  /* ============================ trainers Styles ===================================== */
+
+  .trainers-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 60px;
+  }
+
+  /* ============================ Partners Styles ===================================== */
+
+  .company {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+    padding-bottom: 50px;
+  }
+
+  /* ============================ Footer Styles ===================================== */
+
+  footer {
+    flex-direction: row;
+  }
+
+  footer p {
+    text-align: left;
+    font-weight: 400;
+  }
+
+  footer p span {
+    font-weight: 100;
+  }
+
+  footer a {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  footer a p {
+    font-weight: 900;
+  }
+
+  footer img {
+    height: 100%;
+    width: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  .max-font-26{
+    font-size: 26px !important;
+  }
+
+  .greeting p {
+    font-size: 58px;
+  }
+
+  h1 {
+    font-size: 75px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 48px;
+  }
+
+  .program-img {
+    font-size: 86px;
+  }
+
+  .program-title {
+    font-size: 20px;
+  }
+
+  .program-detail {
+    font-size: 15px;
+  }
+
+  footer .logo {
+    height: 150px;
+    width: 150px;
+  }
+
 }
