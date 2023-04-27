@@ -19,7 +19,9 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background: url(assets/images/mob-bg.png);
+  background-size: 100%;
+  background-position: top;
 }
 
 a {
@@ -63,7 +65,7 @@ ul {
 .xmark,
 .menu {
   position: fixed;
-  z-index: 4;
+  z-index: 3;
   left: 10vw;
   top: 5%;
   font-size: calc(10px + 1.955vh + 1.955vw);
@@ -135,7 +137,19 @@ nav {
 /* ============================ Headline Styles ===================================== */
 
 .greeting {
-  margin-top: 15vh;
+  position: relative;
+}
+
+.greeting .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.09;
+  z-index: -1;
+}
+
+.greeting p {
+  padding: 15vh 10% 0 10%;
   font-size: 21px;
   font-weight: 400;
   color: #ec5242;
@@ -150,8 +164,8 @@ h1 {
   background-size: cover;
   background-position: bottom;
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: border-box;
+  -webkit-background-clip: text;
 }
 
 .description {
@@ -166,21 +180,49 @@ h1 {
 }
 
 .bg1,
-.bg2 {
+.bg2,
+.bg3,
+.bg4,
+.abg1,
+.abg2 {
   position: absolute;
   color: #272a31;
-  font-size: 30px;
+  font-size: calc(3.6875vw + 3.6875vh);
   opacity: 40%;
+  z-index: -1;
+}
+
+.bg3,
+.abg1,
+.abg2 {
+  background-size: cover;
+  border-radius: 50%;
+  opacity: 1;
 }
 
 .bg1 {
-  top: 200px;
+  top: 20vh;
   right: 30px;
 }
 
 .bg2 {
-  top: 50px;
-  left: 100px;
+  top: 5vh;
+  left: 200px;
+}
+
+.bg3 {
+  height: calc(9.778vw + 9.778vh);
+  width: calc(9.778vw + 9.778vh);
+  background: url(assets/images/hitmark-colorful.png);
+  top: calc(40px + 30vh);
+  left: calc(40px + 50vw);
+}
+
+.bg4 {
+  height: calc(3.6875vw + 3.6875vh);
+  top: 500px;
+  left: 0px;
+  opacity: 30%;
 }
 
 .date {
@@ -202,9 +244,8 @@ h1 {
 }
 
 #program {
-  background-image: url(assets/images/about.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(assets/images/cross.svg);
+  background-color: #272a31;
   position: relative;
 }
 
@@ -244,6 +285,7 @@ h1 {
 
 .program-img {
   font-size: 5.215vw;
+  color: white;
   transition: all 0.5s ease-out;
 }
 
@@ -276,15 +318,11 @@ h1 {
 /* ============================ trainers Styles ===================================== */
 
 #trainers {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #fff;
 }
 
 .trainers-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -296,8 +334,6 @@ h1 {
 
 .trainer-card {
   position: relative;
-  display: flex;
-  flex-direction: row;
   font-family: "Lato", sans-serif;
   margin: 5% 2.5%;
 }
@@ -324,8 +360,6 @@ h1 {
 }
 
 .trainer-info {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-self: center;
   height: 34%;
@@ -378,7 +412,7 @@ h1 {
   transform: rotate(180deg);
 }
 
-/* ===================== Partners ================== */
+/* ============================ Partners Styles ===================================== */
 
 #partners {
   background-color: #535353;
@@ -394,7 +428,6 @@ h1 {
 }
 
 .company {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
@@ -407,10 +440,9 @@ h1 {
   color: #a8a8a8;
 }
 
-/* ================= Footer styles ======================== */
+/* ============================ Footer Styles ===================================== */
 
 footer {
-  display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
@@ -421,5 +453,5 @@ footer {
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  padding: 20px 5px;
+  padding: 5px 5px;
 }

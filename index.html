@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <div class="wrapper">
+    <div class="wrapper flex">
       <i class="fa-brands fa-facebook-f"></i>
       <i class="fa-brands fa-twitter"></i>
       <a href="#">English</a>
@@ -24,7 +24,7 @@
   <div class="navigation">
     <i class="fa-solid fa-xmark xmark"></i>
     <nav>
-      <div class="nav-top flex">
+      <div class="nav-top">
         <a href="index.html">
           <img class="logo" src="assets/images/logo2.png" alt="logo">
           <p><span>SP Fitness</span><br>center 2023</p>
@@ -32,7 +32,7 @@
       </div>
       <ul class="nav-links flex column">
         <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="#">About</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
         <li><a class="nav-link" href="#">Join</a></li>
         <li><a class="nav-link" href="#">Sponsor</a></li>
         <li><a class="nav-link" href="#">News</a></li>
@@ -40,25 +40,23 @@
       <div class="nav-bottom flex">
         <button type="button">SPFC Story</button>
       </div>
-      <i class="bg1 fa-solid fa-dumbbell"></i>
-      <i class="bg2 fa-solid fa-hand-fist"></i>
-      <i class="bg3 fa-solid fa-person-running-fast"></i>
     </nav>
   </div>
 
   <main>
     <section id="headline" class="section">
+      <div class="greeting">
+        <div class="background"></div>
+        <p>"Hello! Champion"</p>
+      </div>
       <div class="wrapper">
-        <p class="greeting">"Hello! Champion"</p>
         <h1>Super Power Fitness Center 2023</h1>
         <p class="description">Super Power Fitness Center is a premier gym offering various services and facilities to
           help you achieve your fitness goals. Whether you want to lose weight, build muscle, improve your health or
           just
           have fun, we have something for you. Join us today and discover the benefits of working out with our qualified
           trainers, state-of-the-art equipment and supportive community.</p>
-        <i class="bg1 fa-solid fa-dumbbell"></i>
-        <i class="bg2 fa-solid fa-hand-fist"></i>
-        <i class="bg3 fa-solid fa-transporter"></i>
+
         <p class="date">2023.2.12(Mon) ~ 3(Tue)</p>
         <p class="place">@ Hajb El Ayoun, Kairouan</p>
       </div>
@@ -109,10 +107,10 @@
       </div>
     </section>
 
-    <section id="trainers">
+    <section id="trainers" class="flex column">
       <div class="wrapper">
         <h2 class="title">Featured Trainers</h2>
-        <div id="trainers-container" class="trainers-container">
+        <div id="trainers-container" class="trainers-container flex column">
 
         </div>
         <button type="button" class="trainer-btn"><span class="moreless">MORE </span><i
@@ -123,7 +121,7 @@
     <section id="partners">
       <div class="container">
         <h2 class="title">Partner</h2>
-        <div class="company">
+        <div class="company flex">
           <span id="facebook">Facebook</span>
           <span id="mozilla">Mozilla</span>
           <span id="apple">Apple</span>
@@ -134,7 +132,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="flex">
     <img src="assets/Images/Logo2.png" alt="" class="footer-logo">
     <p>
       2023 | SuperPower Fitness center
