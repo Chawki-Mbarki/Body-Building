@@ -15,37 +15,37 @@ const trainers = [
     image: 'assets/Trainers/Trainer1.jfif',
     name: 'Arnold Schwarzenegger1',
     occupation: 'Actor Producer Director',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias'
+    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias',
   },
   {
     image: 'assets/Trainers/Trainer1.jfif',
     name: 'Arnold Schwarzenegger2',
     occupation: 'Actor Producer Director',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias'
+    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias',
   },
   {
     image: 'assets/Trainers/Trainer1.jfif',
     name: 'Arnold Schwarzenegger3',
     occupation: 'Actor Producer Director',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias'
+    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias',
   },
   {
     image: 'assets/Trainers/Trainer1.jfif',
     name: 'Arnold Schwarzenegger4',
     occupation: 'Actor Producer Director',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias'
+    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias',
   },
   {
     image: 'assets/Trainers/Trainer1.jfif',
     name: 'Arnold Schwarzenegger5',
     occupation: 'Actor Producer Director',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias'
+    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias',
   },
   {
     image: 'assets/Trainers/Trainer1.jfif',
     name: 'Arnold Schwarzenegger6',
     occupation: 'Actor Producer Director',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias'
+    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias',
   },
 ];
 
