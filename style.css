@@ -5,6 +5,7 @@
 @media screen and (max-width: 767px) {
   header,
   footer,
+  footer span,
   .join-btn,
   .desktop-link,
   #partners {
@@ -57,6 +58,12 @@ footer {
   justify-content: center;
 }
 
+footer .logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
 footer a {
   display: flex;
   align-items: center;
@@ -70,12 +77,6 @@ footer p {
   text-align: center;
   color: black;
   align-self: center;
-}
-
-footer img {
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
 }
 
 /* ============================ Navigation Styles ===================================== */
@@ -322,7 +323,7 @@ h1 {
 .trainer-card {
   position: relative;
   font-family: "Lato", sans-serif;
-  margin: 5% 2.5%;
+  margin: 0;
 }
 
 .trainer-deco {
@@ -671,6 +672,7 @@ h1 {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     padding-bottom: 60px;
   }
 
