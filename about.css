@@ -1,3 +1,20 @@
+@media screen and (max-width: 768px) {
+  footer,
+  #partners {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: 2vw;
+  }
+
+  footer .wrapper {
+    justify-content: space-around;
+    gap: 10px;
+  }
+}
+
 /* ============================ Global Styles ===================================== */
 
 body {
@@ -135,8 +152,6 @@ h1 {
   font-family: "COCOGOOSE", sans-serif;
   color: #fff;
 }
-
-
 
 @media screen and (min-width: 768px) {
   /* ============================ Headline Styles ===================================== */

@@ -48,7 +48,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🎥 **Loom Video** <a id="Loom-Video"></a>
-- [Click Here](#)
+- [Click Here](https://www.loom.com/share/6347120b99d741da855f44bbaae01fa0)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 **Getting Started** <a id="getting-started"></a>
