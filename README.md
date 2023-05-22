@@ -1,8 +1,28 @@
 <a id="readme-top"></a>
+<h1 align="center">🏋️‍♂️ SUPERPOWER FITNESS CENTER 🏋️‍♂️</h1>
+
+<p align="center">
+  <a href="https://github.com/chawkimbarki">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub badge" />
+  </a>
+  <a href="https://twitter.com/Chawki__Mbarki">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter badge" />
+  </a>
+  <a href="https://www.linkedin.com/in/chawki-mbarki-a77546202/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>This project is a website that showcases the services and facilities offered by Superpower Fitness Center, a gym that helps you achieve your fitness goals with personalized training and support.</strong>
+  <br>
+    Whether you want to lose weight, gain muscle, or improve your health, this website will help you find the best plan for you. You can also learn more about the trainers, the equipment, and the testimonials from satisfied customers. This project demonstrates my skills in using HTML, CSS, and JavaScript to create a stunning and interactive website that attracts and engages visitors.
+</p>
 <div align="center">
-  <h1><b>SUPERPOWER FITNESS CENTER</b></h1>
+<img src="./app_screenshot.png">
 </div>
 
+<hr>
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
